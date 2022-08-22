@@ -26,14 +26,13 @@ body {
 }
 
 header {
-    background-color: aqua;
     height: 48px;
 }
 
 .logo {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 1%;
+    gap: 4%;
     text-decoration: none;
     color: var(--secundary-color);
     font-size: 2rem;
@@ -41,9 +40,45 @@ header {
 }
 
 main {
-    background-color: brown;
     flex: 1;
     font-family: 'Righteous', cursive;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.title {
+    position: relative;
+    grid-column: 1/-1;
+    place-self: center;
+    color: #FFFFFF55;
+    z-index: -1;
+}
+
+.title__text {
+    font-size: 20vw;
+    color: var(--terciary-color);
+}
+
+.title__transparent {
+    position: absolute;
+    font-size: 27vw;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.description {
+    grid-column: 1/7;
+    place-self: center start;
+
+}
+
+.action {
+    font-family: 'Righteous', cursive;
+    text-decoration: none;
+    color: white;
+    grid-column: 7/-1;
+    place-self: center end;
 }
 
 footer {
