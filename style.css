@@ -54,6 +54,8 @@ main {
     z-index: -1;
 }
 
+
+
 .title__text {
     font-size: 20vw;
     color: var(--terciary-color);
@@ -70,19 +72,36 @@ main {
 .description {
     grid-column: 1/7;
     place-self: center start;
+    color: var(--secundary-color);
 
+}
+
+.description__title {
+    font-size: 4rem;
+}
+
+.description__text {
+    font-size: 1.2rem;
+    width: 490px;
 }
 
 .action {
     font-family: 'Righteous', cursive;
     text-decoration: none;
-    color: white;
     grid-column: 7/-1;
     place-self: center end;
+    height: 100px;
+    width: 411px;
+    background-color: var(--secundary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--terciary-color);
+    font-size: 3rem;
 }
 
 footer {
-    background-color: coral;
-    
-
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    color: var(--secundary-color);
 }
